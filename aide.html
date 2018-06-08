@@ -1,5 +1,6 @@
-
+<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,8 @@
 </head>
 
 <body script="multMatch.js">
-    <header>
-        <nav class="navbar navbar-default">
+     <header>
+         <nav class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
                     <a class="navbar-brand navbar-link logo" href="index.html"></a>
@@ -28,50 +29,38 @@
                     </ul>
                 </div>
             </div>
-        </nav>
-    </header>
+        </nav> 
+    </header> 
     <div class="container post">
-        <div class="row">
+	<div class="row">
             <div class="col-md-12">
-				<br>
-                <h2 class="text-center" style="color:rgb(255,255,255);font-weight:bold;background-color:rgb(80,80,80);border:2px solid rgb(0,0,0);">Contactez nous</h2>
-			</div>
-			<div class="col-md-12" style="text-align: center;">
-                <form style="text-align:center;" name="contactform" method="post" action="contact.php">
-                    <h5 class="text-center" style="font-weight:bold;">Votre nom</h5>
-                    <input type="text" placeholder="Entrer votre nom" name="nom" maxlength="50"/>
-                    <h5 class="text-center" style="font-weight:bold;">Votre prénom</h5>
-                    <input type="text" id="gains" placeholder="Entrer votre prénom" name="prenom" maxlength="50"/>
-                    <h5 class="text-center" style="font-weight:bold;">Votre adresse mail</h5>
-                    <input type="text" placeholder="Entrer votre mail" name="email" maxlength="80"/>
-                    <h5 class="text-center" style="font-weight:bold;">Ce que vous souhaitez nous dire</h5>
-                    <textarea class="contact-text" placeholder="Entrer votre texte" name="message" maxlength="1000"></textarea>
-                    <br>
-                    <input type="submit" name="Envoyer"/>
-                </form>
-			</div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="row"></div>
-                    </div>
-                </div>
+                                <br>
+                <h2 class="text-center" style="color:rgb(255,255,255);font-weight:bold;background-color:rgb(80,80,80);border:2px solid rgb(0,0,0);">Comment utiliser FRC</h2>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-12">
+                                <br>
+                <h3 class="text-center">Besoin d'aide ?</h3>
+                                <br>
+            </div>
+                        <div class="col-md-12">
+                <span style="font-size:140%;">Ce site internet est un outil pour vous accompagner dans votre pari sportif ! Il vous propose différentes pages :<br><br>La page <B><I>Matchs à venir</I></B> vous propose différentes combinaisons afin de multiplier par 2, 5 ou 10 votre mise initiale. Vous pourrez aussi voir la liste des matchs à venir ainsi que les cotes et statistiques associées. Enfin, vous aurez accès au classement actuel.<br><br>La page <B><I>Historique des pronostics</I></B> vous permettra d'avoir les résultats des matchs déjà joués, ainsi que les combinaisons proposées par notre algorithme à chaque journée. Vous verrez aussi le classement avant le début de la journée.<br><br>La page <B><I>Pari à la demande</I></B> vous permettra d'indiquer la somme que vous êtes prêt à parier et la somme que vous souhaitez gagner. Notre algorithme vous proposera les paris les moins risqués de façon à atteindre les gains souhaités.<br><br>La page <B><I>Contact</I></B> vous permettra de nous faire remonter toutes vos remarques / suggestions.<br><br><B>Bon Pari!</B><br><br><I>L'équipe FRC 2017 :<br>Célande Adrien<br>Guillaume Genève<br>Jean-Antoine Le Holloco<br>Xavier Losco<br><br>L'équipe FRC 2018 :<br>Hugo BLASCO<br>Mehdy BOURJA<br>Robin GOMEZ<br>Bruno LOMUSCIO</I></span>
+            </div>
+        </div>
+
     </div>
     <footer>
         <h5>Football Results Calculator © 2017-2018</h5></footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/classHistorique.js"></script>
     <script src="assets/js/classMatch.js"></script>
-    <script src="assets/js/historique.js"></script>
     <script src="assets/js/match.js"></script>
-    <script src="assets/js/multHistorique.js"></script>
     <script src="assets/js/multMatch.js"></script>
-    <script src="assets/js/pari.js"></script>
+	
+	<script type="text/javascript">
+		mult();
+	</script>
 </body>
 
 </html>
