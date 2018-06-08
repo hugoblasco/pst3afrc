@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRC - Football Results Calculator</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="assets/css/user.css">
+</head>
+
+<body script="multMatch.js">
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand navbar-link logo" href="index.html"></a>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li style="font-size:150%;" role="presentation"><a href="index.html">Accueil </a></li>
+                        <li style="font-size:150%;" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Mon Pari <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu" style="left:0;right:auto;background-color:rgb(238,238,238);">
+                                <li style="font-size:120%;" role="presentation"><a href="match.html">Consulter les matchs</a></li>
+                                <li style="font-size:120%;" role="presentation"><a href="historique.html">Consulter l'historique</a></li>
+                                <li style="font-size:120%;" role="presentation"><a href="pari.html">Mon pari perso</a></li>
+                            </ul>
+                        </li>
+                        <li style="font-size:150%;" role="presentation"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container post">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center" style="font-weight:bold;">Historique des Matchs</h1>
+		<h3 class="text-center"> La Journée:<h3></div>
+	<form style="text-align:center;">		
+		<select style="border:2px solid rgb(0,0,80);font-size:200%;width:300px;" id=menujournee onchange="actualise()">
+			<option selected value>Journée 1</option>
+			<option value>Journée 2</option>
+			<option value>Journée 3</option>
+			<option value>Journée 4</option>
+			<option value>Journée 5</option>
+			<option value>Journée 6</option>
+			<option value>Journée 7</option>
+			<option value>Journée 8</option>
+			<option value>Journée 9</option>
+			<option value>Journée 10</option>
+			<option value>Journée 11</option>
+			<option value>Journée 12</option>
+			<option value>Journée 13</option>
+			<option value>Journée 14</option>
+			<option value>Journée 15</option>
+			<option value>Journée 16</option>
+			<option value>Journée 17</option>
+			<option value>Journée 18</option>
+			<option value>Journée 19</option>
+			<option value>Journée 20</option>
+			<option value>Journée 21</option>
+			<option value>Journée 22</option>
+			<option value>Journée 23</option>
+			<option value>Journée 24</option>
+			<option value>Journée 25</option>
+			<option value>Journée 26</option>
+			<option value>Journée 27</option>
+			<option value>Journée 28</option>
+			<option value>Journée 29</option>
+			<option value>Journée 30</option>
+			<option value>Journée 31</option>
+			<option value>Journée 32</option>
+			<option value>Journée 33</option>
+			<option value>Journée 34</option>
+			<option value>Journée 35</option>
+			<option value>Journée 36</option>
+			<option value>Journée 37</option>
+			<option value>Journée 38</option>
+		</select>
+	</form>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center">Propositions de la journée</h2></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div>
+                                    <ul class="nav nav-tabs">
+                                        <li style="font-size:130%;background-color:rgb(200,200,200);border:1px solid white;" class="active"><a href="#tab-1" role="tab" data-toggle="tab">X 2</a></li>
+                                        <li style="font-size:130%;background-color:rgb(200,200,200);border:1px solid white;" ><a href="#tab-2" role="tab" data-toggle="tab">X 5</a></li>
+                                        <li style="font-size:130%;background-color:rgb(200,200,200);border:1px solid white;" ><a href="#tab-3" role="tab" data-toggle="tab">X10 </a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" role="tabpanel" id="tab-1">
+                                            <div style="border:1px solid white;" id="div1"><a class="btn btn-default btn-block prop" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-1" role="button" href="#collapse-1" id="collapseP1">Proposition N°1</a>
+                                                <div class="collapse" id="collapse-1">
+                                                </div>
+                                            </div>
+                                            <div style="border:1px solid white;" id="div2"><a class="btn btn-default btn-block prop" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-2" role="button" href="#collapse-2" id="collapseP2">Proposition N°2</a>
+                                                <div class="collapse" id="collapse-2">
+                                                </div>
+                                            </div>
+											<div style="border:1px solid white;" id="div3"><a class="btn btn-default btn-block prop" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-3" role="button" href="#collapse-3" id="collapseP3">Proposition N°3</a>
+                                                <div class="collapse" id="collapse-3">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" role="tabpanel" id="tab-2">
+                                            <div style="border:1px solid white;"  id="div4"><a class="btn btn-default btn-block prop" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-4" role="button" href="#collapse-4" id="collapseP4">Proposition N°1</a>
+                                                <div class="collapse" id="collapse-4">
+                                                </div>
+                                            </div>
+                                            <div style="border:1px solid white;" id="div5"><a class="btn btn-default btn-block prop" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-5" role="button" href="#collapse-5" id="collapseP5">Proposition N°2</a>
+                                                <div class="collapse" id="collapse-5">
+                                                </div>
+                                            </div>
+											<div style="border:1px solid white;" id="div6"><a class="btn btn-default btn-block prop" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-6" role="button" href="#collapse-6" id="collapseP6">Proposition N°3</a>
+                                                <div class="collapse" id="collapse-6">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" role="tabpanel" id="tab-3">
+                                            <div style="border:1px solid white;" id="div7"><a class="btn btn-default btn-block prop" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-7" role="button" href="#collapse-7" id="collapseP7">Proposition N°1</a>
+                                                <div class="collapse" id="collapse-7">
+                                                </div>
+                                            </div>
+                                            <div style="border:1px solid white;" id="div8"><a class="btn btn-default btn-block prop" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-8" role="button" href="#collapse-8" id="collapseP8">Proposition N°2</a>
+                                                <div class="collapse" id="collapse-8">
+                                                </div>
+                                            </div>
+											<div style="border:1px solid white;" id="div9"><a class="btn btn-default btn-block prop" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-9" role="button" href="#collapse-9" id="collapseP9">Proposition N°3</a>
+                                                <div class="collapse" id="collapse-9">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12"><br>
+                <h2 class="text-center">Les Matchs</h2><br>
+			</div>
+        </div>
+		<div class="row">
+			<div class="col-md-12" id="matchs">
+			
+			</div>
+		</div>
+        <div class="row">
+            <div class="col-md-12"><br>
+                <h2 class="text-center">Le Classement avant la journée</h2><br></div>
+	    </div>
+		<div class="row">
+		    <div class="col-md-12">
+			<div>
+			    <table align=center class="tableau" width=100px>
+				<thead>
+				    <tr style="border:1px solid rgb(0,0,80);background-color:rgb(0,0,80);color:white">
+					<th style="text-align:right;padding-right:5px;padding-left:5px;border-right:1px solid white;">N°</th>
+					<th colspan=2 style="padding-right:5px;padding-left:5px;border-right:1px solid white;" width="100%">Equipe</th>
+					<th style="text-align:right;padding-right:5px;padding-left:5px;border-right:1px solid white;">PTS</th>
+					<th style="text-align:right;padding-right:5px;padding-left:5px;border-right:1px solid white;">MJ</th>
+					<th class="classement-cache" style="text-align:right;padding-right:5px;padding-left:5px;border-right:1px solid white;empty-cells:show;">G</th>
+					<th class="classement-cache" style="text-align:right;padding-right:5px;padding-left:5px;border-right:1px solid white;">N</th>
+					<th class="classement-cache" style="text-align:right;padding-right:5px;padding-left:5px;border-right:1px solid white;">P</th>
+					<th style="text-align:right;padding-right:5px;padding-left:5px;border-right:1px solid white;">BP</th>
+					<th style="text-align:right;padding-right:5px;padding-left:5px;border-right:1px solid white;">BC</th>
+					<th style="text-align:right;padding-right:5px;padding-left:5px;">GA</th>
+				    </tr>
+				</thead>
+				<tbody id="tableaubody">
+
+				</tbody>
+			    </table>
+			</div>
+		    </div>
+		</div>
+	    </div>
+        </div>
+    </div>
+    <footer>
+        <h5>Football Results Calculator © 2017</h5></footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!--    <script src="assets/js/classMatch.js"></script>
+    <script src="assets/js/match.js"></script>
+    <script src="assets/js/multMatch.js"></script>
+    <script src="assets/js/pari.js"></script>
+-->
+    <script src="assets/js/historique.js"></script>
+    <script src="assets/js/multHistorique.js"></script>
+    <script src="assets/js/classHistorique.js"></script>
+
+<script type="text/javascript">
+actualise();
+</script>
+
+</body>
+
+</html>

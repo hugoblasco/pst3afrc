@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRC - Football Results Calculator</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="assets/css/user.css">
+</head>
+
+<body script="multMatch.js">
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand navbar-link logo" href="index.html"></a>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li style="font-size:150%;" role="presentation"><a href="index.html">Accueil </a></li>
+                        <li style="font-size:150%;" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Mon Pari <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu" style="left:0;right:auto;background-color:rgb(238,238,238);">
+                                <li style="font-size:120%;" role="presentation"><a href="match.html">Consulter les matchs</a></li>
+                                <li style="font-size:120%;" role="presentation"><a href="historique.html">Consulter l'historique</a></li>
+                                <li style="font-size:120%;" role="presentation"><a href="pari.html">Mon pari perso</a></li>
+                            </ul>
+                        </li>
+                        <li style="font-size:150%;" role="presentation"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container post">
+	<div class="row">
+            <div class="col-md-12">
+                                <br>
+                <h2 class="text-center" style="color:rgb(25,20,100);font-weight:bold;background-color:rgb(200,200,200);border:2px solid rgb(25,20,100);">Bienvenue sur FRC</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                                <br>
+                <h3 class="text-center">Le mot de l'équipe</h3>
+                                <br>
+            </div>
+                        <div class="col-md-12">
+                <span style="font-size:140%;">Ce site internet est un outil pour vous accompagner dans votre pari sportif ! Il vous propose différentes pages :<br><br>La page <B><I>Consulter les matchs</I></B> vous propose différentes combinaisons afin de multiplier par 2, 5 ou 10 votre mise initiale. Vous pourrez aussi voir la liste des matchs à venir ainsi que les cotes et statistiques associées. Enfin, vous aurez accès au classement actuel.<br><br>La page <B><I>Consulter l'historique</I></B> vous permettra d'avoir les résultats des matchs déjà joués, ainsi que les combinaisons proposées par notre algorithme à chaque journée. Vous verrez aussi le classement avant le début de la journée.<br><br>La page <B><I>Mon pari perso</I></B> vous permettra d'indiquer une somme à parier et une somme à gagner. Notre algorithme vous proposera les paris les moins risqués de façon à atteindre les gains souhaités. Vous y verrez aussi les matchs à venir et le classement, pour vous permettre de vous faire un avis et choisir parmis nos propositions.<br><br>La page <B><I>Contact</I></B> vous permettra de nous faire remonter toutes vos remarques / suggestions.<br><br><B>Bon Pari!</B><br><I>L'équipe FRC :<br>Célande Adrien<br>Guillaume Genève<br>Jean-Antoine Le Holloco<br>Xavier Losco</I></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+				<br>
+                <h3 class="text-center">Propositions du moment</h3><br>
+            </div>
+        </div>
+		<div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div>
+                                    <ul class="nav nav-tabs">
+                                        <li style="font-size:130%;background-color:rgb(200,200,200);border:1px solid white;" class="active"><a href="#tab-1" role="tab" data-toggle="tab">X 2</a></li>
+                                        <li style="font-size:130%;background-color:rgb(200,200,200);border:1px solid white;" ><a href="#tab-2" role="tab" data-toggle="tab">X 5</a></li>
+                                        <li style="font-size:130%;background-color:rgb(200,200,200);border:1px solid white;" ><a href="#tab-3" role="tab" data-toggle="tab">X10 </a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" role="tabpanel" id="tab-1">
+                                            <div style="border:1px solid white;"><a class="btn btn-default btn-block prop" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-1" role="button" href="#collapse-1" id="collapseP1">Proposition N°1</a>
+                                                <div class="collapse" id="collapse-1">
+                                                </div>
+                                            </div>
+                                            <div style="border:1px solid white;"><a class="btn btn-default btn-block prop" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-2" role="button" href="#collapse-2" id="collapseP2">Proposition N°2</a>
+                                                <div class="collapse" id="collapse-2">
+                                                </div>
+                                            </div>
+					    <div style="border:1px solid white;"><a class="btn btn-default btn-block prop" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-3" role="button" href="#collapse-3" id="collapseP3">Proposition N°3</a>
+                                                <div class="collapse" id="collapse-3">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" role="tabpanel" id="tab-2">
+                                            <div style="border:1px solid white;"><a class="btn btn-default btn-block prop" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-4" role="button" href="#collapse-4" id="collapseP4">Proposition N°1</a>
+                                                <div class="collapse" id="collapse-4">
+                                                </div>
+                                            </div>
+                                            <div style="border:1px solid white;"><a class="btn btn-default btn-block prop" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-5" role="button" href="#collapse-5" id="collapseP5">Proposition N°2</a>
+                                                <div class="collapse" id="collapse-5">
+                                                </div>
+                                            </div>
+					    <div style="border:1px solid white;"><a class="btn btn-default btn-block prop" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-6" role="button" href="#collapse-6" id="collapseP6">Proposition N°3</a>
+                                                <div class="collapse" id="collapse-6">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" role="tabpanel" id="tab-3">
+                                            <div style="border:1px solid white;"><a class="btn btn-default btn-block prop" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-7" role="button" href="#collapse-7" id="collapseP7">Proposition N°1</a>
+                                                <div class="collapse" id="collapse-7">
+                                                </div>
+                                            </div>
+                                            <div style="border:1px solid white;"><a class="btn btn-default btn-block prop" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-8" role="button" href="#collapse-8" id="collapseP8">Proposition N°2</a>
+                                                <div class="collapse" id="collapse-8">
+                                                </div>
+                                            </div>
+					    <div style="border:1px solid white;"><a class="btn btn-default btn-block prop" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-9" role="button" href="#collapse-9" id="collapseP9">Proposition N°3</a>
+                                                <div class="collapse" id="collapse-9">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h5>Football Results Calculator © 2017</h5></footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/classMatch.js"></script>
+    <script src="assets/js/match.js"></script>
+    <script src="assets/js/multMatch.js"></script>
+	
+	<script type="text/javascript">
+		mult();
+	</script>
+</body>
+
+</html>

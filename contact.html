@@ -1,0 +1,80 @@
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRC - Football Results Calculator</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="assets/css/user.css">
+</head>
+
+<body script="multMatch.js">
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand navbar-link logo" href="index.html"></a>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li style="font-size:150%;" role="presentation"><a href="index.html">Accueil </a></li>
+                        <li style="font-size:150%;" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Mon Pari <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu" style="left:0;right:auto;background-color:rgb(238,238,238);">
+                                <li style="font-size:120%;" role="presentation"><a href="match.html">Consulter les matchs</a></li>
+                                <li style="font-size:120%;" role="presentation"><a href="historique.html">Consulter l'historique</a></li>
+                                <li style="font-size:120%;" role="presentation"><a href="pari.html">Mon pari perso</a></li>
+                            </ul>
+                        </li>
+                        <li style="font-size:150%;" role="presentation"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container post">
+        <div class="row">
+            <div class="col-md-12">
+				<br>
+                <h2 class="text-center">Contact </h2>
+			</div>
+			<div class="col-md-12" style="text-align: center;">
+                <form style="text-align:center;" name="contactform" method="post" action="contact.php">
+                    <h5 class="text-center" style="font-weight:bold;">Votre nom</h5>
+                    <input type="text" placeholder="Entrer votre nom" name="nom" maxlength="50"/>
+                    <h5 class="text-center" style="font-weight:bold;">Votre prénom</h5>
+                    <input type="text" id="gains" placeholder="Entrer votre prénom" name="prenom" maxlength="50"/>
+                    <h5 class="text-center" style="font-weight:bold;">Votre adresse mail</h5>
+                    <input type="text" placeholder="Entrer votre mail" name="email" maxlength="80"/>
+                    <h5 class="text-center" style="font-weight:bold;">Ce que vous souhaitez nous dire</h5>
+                    <textarea class="contact-text" placeholder="Entrer votre texte" name="message" maxlength="1000"></textarea>
+                    <br>
+                    <input type="submit" name="Envoyer"/>
+                </form>
+			</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h5>Football Results Calculator © 2017</h5></footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/classHistorique.js"></script>
+    <script src="assets/js/classMatch.js"></script>
+    <script src="assets/js/historique.js"></script>
+    <script src="assets/js/match.js"></script>
+    <script src="assets/js/multHistorique.js"></script>
+    <script src="assets/js/multMatch.js"></script>
+    <script src="assets/js/pari.js"></script>
+</body>
+
+</html>
